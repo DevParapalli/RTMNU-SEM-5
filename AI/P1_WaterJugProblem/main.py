@@ -1,7 +1,7 @@
 from collections import deque
 
 
-def _gcd(a, b):
+def gcd(a, b):
     res = min(a, b)
     while res > 0:
         if a % res == 0 and b % res == 0:
@@ -15,7 +15,7 @@ def is_solvable(a, b, target):
         return False
     if (a == 0 and b == 0):
         return target == 0
-    if (target % _gcd(a, b) == 0):
+    if (target % gcd(a, b) == 0):
         return True
     return False
 
@@ -28,6 +28,7 @@ def get_path_from_transitions(transitions: list[tuple[tuple[int, int], tuple[int
     path: list[tuple[int, int]] = list()
     current_state = final_state
     transitions = list(set(transitions))
+    # This sort ensures that the minimal filled ones are at the front, giving a shorter reverse path (more closer to (0, 0) )
     transitions.sort(key=lambda x: x[0][0] + x[0][1])
     while current_state != (0, 0):
         for i in transitions:
