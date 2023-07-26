@@ -5,9 +5,9 @@ def gcd(a, b):
     res = min(a, b)
     while res > 0:
         if a % res == 0 and b % res == 0:
-            break
+            return res
         res -= 1
-    return res
+    raise ValueError("No GCD found")
 
 
 def is_solvable(a, b, target):
@@ -106,10 +106,13 @@ def water_jug_bfs(a, b, target):
     return solution_exists, solution_found, path
 
 if __name__ == "__main__":
-    se, sf, p = water_jug_bfs(5, 3, 2)
+    se, sf, p = water_jug_bfs(int(input("A:")), int(input("B:")), int(input("T:")))
     if se == sf == True: # Check to make sure that errors don't compromise answer
         _pl = len(p)
         for pe, idx in enumerate(p):
             print(f"{idx[0]} {idx[1]}", end="")
             if pe != _pl - 1:
                 print(" -> ", end="")
+    else:
+        print("No solution exists")
+        exit(1)

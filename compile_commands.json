@@ -1,0 +1,7 @@
+[
+    {
+        "directory": "DAA/BubbleSort",
+        "arguments" : ["gcc", "-o", "BubbleSort.bin", "main.c"],
+        "file": "main.c"
+    }
+]
