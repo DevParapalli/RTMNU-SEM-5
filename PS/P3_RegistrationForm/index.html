@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevParapalli's Registration Form</title>
+    <style>
+        form {
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+        }
+        label {
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: .5rem;
+        }
+        label select {
+            padding: 1px 6px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <h1>Registration Form</h1>
+        <label for="name"><span>Name:</span> 
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </label>
+        <label for="email"><span>Email: </span>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </label>
+        <label for="phone"><span>Phone:</span> 
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone" required>
+        </label>
+        <label for="gender"><span>Gender:</span>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="Other">Other</option>
+                <option value="not-disclosed">Would not like to disclose</option>
+            </select>
+        </label>
+        <label for="password"><span>Password:</span> 
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        </label>
+        <label for="confirmPassword"><span>Confirm Password:</span> 
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password" required>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

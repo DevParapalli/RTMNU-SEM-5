@@ -6,12 +6,12 @@
    - Various tags
    - Create Divisions
    - Insert an image
-2. [ ] [Create static web page using complex table like mark-sheet, telephone bill, timetable etc.](./P2_ComplexTable/)
+2. [x] [Create static web page using complex table like mark-sheet, telephone bill, timetable etc.](./P2_ComplexTable/)
    - Using All table attributes
    - Use table border formatting
    - Use CSS on tables
-3. [ ] [Create registration form using HTML form objects.](./P3_RegistrationForm/)
-4. [ ] [Create any website layout using CSS](./P4_WebsiteLayoutCSS/)
+3. [x] [Create registration form using HTML form objects.](./P3_RegistrationForm/)
+4. [x] [Create any website layout using CSS](./P4_WebsiteLayoutCSS/)
    - Background color
    - Text color
    - Implement all information in table layout

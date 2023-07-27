@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>P2_ComplexTable</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        th {
+            padding: 0.1rem 0.25rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 0.1rem 0.25rem;
+            border: black 1px solid;
+        }
+
+        td[colspan="2"] {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border: solid 1px black">
+        <caption>DevParapalli's Timetable</caption>
+        <thead>
+            <tr style="font-weight: bold;">
+                <th>↓ Day | Time →</th>
+                <th>10:30</th>
+                <th>11:30</th>
+                <th>R1</th>
+                <th>13:00</th>
+                <th>14:00</th>
+                <th>R2</th>
+                <th>15:15</th>
+                <th>16:15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>AI</td>
+                <td>TCP/IP</td>
+                <td rowspan="5"></td>
+                <td>SEPM</td>
+                <td>DAA</td>
+                <td rowspan="5"></td>
+                <td colspan="2">-</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>AI</td>
+                <td>TCP/IP</td>
+                <td>SEPM</td>
+                <td>DAA</td>
+                <td>DAA_T</td>
+                <td>AI_T</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>AI</td>
+                <td>TCP/IP</td>
+                <td>SEPM</td>
+                <td>DAA</td>
+                <td colspan="2">-</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td colspan="2">PS_PR</td>
+                <td colspan="2">AI_PR</td>
+                <td colspan="2">DAA_PR</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

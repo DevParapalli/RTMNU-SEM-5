@@ -113,6 +113,7 @@ if __name__ == "__main__":
             print(f"{idx[0]} {idx[1]}", end="")
             if pe != _pl - 1:
                 print(" -> ", end="")
+        print()
     else:
         print("No solution exists")
         exit(1)
