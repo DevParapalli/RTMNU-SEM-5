@@ -15,7 +15,7 @@
    - Background color
    - Text color
    - Implement all information in table layout
-5. [ ] [Write a JavaScript code that displays text “TEXT-GROWING” with increasing font size in the interval of 100ms in RED COLOR, when the font size reaches 50pt it displays “TEXT-SHRINKING” in BLUE color. Then the font size decreases to 5pt.](./P5_TextGrowShrinkJS/)
+5. [x] [Write a JavaScript code that displays text “TEXT-GROWING” with increasing font size in the interval of 100ms in RED COLOR, when the font size reaches 50pt it displays “TEXT-SHRINKING” in BLUE color. Then the font size decreases to 5pt.](./P5_TextGrowShrinkJS/)
 6. [ ] [Write a JavaScript that calculates the squares and cubes of the numbers from 0 to 10 and outputs HTML text that displays the resulting values in an HTML table format.](./P6_SquaresCubesTable/)
 7. [ ] [Develop and demonstrate a HTML5 file that includes JavaScript script that uses functions for the following problems.](./P7_JSFunc/)
    - Parameter: A string
