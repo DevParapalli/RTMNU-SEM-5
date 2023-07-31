@@ -6,3 +6,9 @@ def restart_program():
     import os
     python = sys.executable
     os.execl(python, python, * sys.argv)
+
+
+def clear_screen():
+    """Clears the screen"""
+    import os
+    os.system('cls' if os.name == 'nt' else 'clear')

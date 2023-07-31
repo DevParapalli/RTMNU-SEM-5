@@ -16,12 +16,12 @@ A basic HTML form is represented using the `<form>` element, and it contains var
     - The `<input>` element is used to create various types of form input fields.
     - Attributes:
     - `type`: Specifies the type of input field. Common values include:
-    - `"text"`: Single-line text input.
-    - `"password"`: Password input, where characters are masked for security.
-    - `"checkbox"`: A checkbox to select one or multiple options.
-    - `"radio"`: Radio buttons, allowing users to choose one option from a group.
-    - `"submit"`: A button to submit the form.
-    - `"reset"`: A button to reset the form to its initial values.
+      - `"text"`: Single-line text input.
+      - `"password"`: Password input, where characters are masked for security.
+      - `"checkbox"`: A checkbox to select one or multiple options.
+      - `"radio"`: Radio buttons, allowing users to choose one option from a group.
+      - `"submit"`: A button to submit the form.
+      - `"reset"`: A button to reset the form to its initial values.
     - `name`: Provides a name for the input element, used to identify the input when the form is submitted.
     - `value`: Specifies the default value of the input field.
     - `placeholder`: Displays a hint or example text inside the input field.
@@ -51,9 +51,9 @@ A basic HTML form is represented using the `<form>` element, and it contains var
     - The `<button>` element creates a clickable button within the form.
     - Attributes:
     - `type`: Specifies the type of button. Common values include:
-    - `"submit"`: Submits the form when clicked.
-    - `"reset"`: Resets the form when clicked.
-    - `"button"`: A generic button that can have custom JavaScript actions associated with it.
+      - `"submit"`: Submits the form when clicked.
+      - `"reset"`: Resets the form when clicked.
+      - `"button"`: A generic button that can have custom JavaScript actions associated with it.
     - `name`: Provides a name for the button, used to identify the button when the form is submitted.
     - `value`: Specifies the value sent to the server when the button is clicked.
-
+    - `disabled`: If present, disables the button, preventing user interaction.
