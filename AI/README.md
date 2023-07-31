@@ -3,7 +3,10 @@
 ## List of Experiments
 
 1. [x] [Write a program to implement water jug problem](./P1_WaterJugProblem/)
-2. [ ] [Write a program to implement tic-tac-toe game](./P2_TicTacToe/)
+2. [x] [Write a program to implement tic-tac-toe game](./P2_TicTacToe/)
+    - <https://realpython.com/tic-tac-toe-ai-python/>
+    - <https://blogs.cornell.edu/info2040/2022/09/13/56590/>
+    - <https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-3-tic-tac-toe-ai-finding-optimal-move/>
 3. [ ] [Write a program to conduct informed search](./P3_InformedSearch/)
 4. [ ] [Write a program to conduct heuristic search](./P4_HeuristicSearch/)
 5. [ ] [Write a program to implement A* algorithm](./P5_AStarAlgorithm/)
