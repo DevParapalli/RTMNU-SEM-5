@@ -7,7 +7,7 @@
     - <https://realpython.com/tic-tac-toe-ai-python/>
     - <https://blogs.cornell.edu/info2040/2022/09/13/56590/>
     - <https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-3-tic-tac-toe-ai-finding-optimal-move/>
-3. [ ] [Write a program to conduct informed search](./P3_InformedSearch/)
+3. [ ] [Write a program to conduct informed search (Should be uninformed)](./P3_UninformedSearch/)
 4. [ ] [Write a program to conduct heuristic search](./P4_HeuristicSearch/)
 5. [ ] [Write a program to implement A* algorithm](./P5_AStarAlgorithm/)
 6. [ ] [Write a program to implement search problem of 3x3 puzzle](./P6_Search3x3Puzzle/)

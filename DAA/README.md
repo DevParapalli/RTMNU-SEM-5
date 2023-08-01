@@ -10,27 +10,27 @@
 - Theory: Understanding the bubble sort algorithm, and its time complexity analysis.
 - C++ Code: Implementation of bubble sort in C++.
 
-1. [ ] Practical 3: Sorting Algorithms - Selection Sort
+1. [x] Practical 3: Sorting Algorithms - [Selection Sort](./SelectionSort/)
 
 - Theory: Understanding the selection sort algorithm and its time complexity analysis.
 - C++ Code: Implementation of selection sort in C++.
 
-1. [ ] Practical 4: Sorting Algorithms - Insertion Sort
+1. [x] Practical 4: Sorting Algorithms - [Insertion Sort](./InsertionSort/)
 
 - Theory: Understanding the insertion sort algorithm and its time complexity analysis.
 - C++ Code: Implementation of insertion sort in C++.
 
-1. [ ] Practical 5: Searching Algorithms - Linear Search
+1. [x] Practical 5: Searching Algorithms - [Linear Search](./LinearSearch/)
 
 - Theory: Understanding the linear search algorithm and its time complexity analysis.
 - C++ Code: Implementation of linear search in C++.
 
-1. [ ] Practical 6: Searching Algorithms - Binary Search
+1. [x] Practical 6: Searching Algorithms - [Binary Search](./BinarySearch/)
 
 - Theory: Understanding the binary search algorithm and its time complexity analysis.
 - C++ Code: Implementation of binary search C++.
 
-1. [ ] Practical 7: Divide and Conquer - Merge Sort
+1. [x] Practical 7: Divide and Conquer - [Merge Sort](./MergeSort/)
 
 - Theory: Understanding the merge sort algorithm and its time complexity analysis.
 - C++ Code: Implementation of merge sort in C++.
