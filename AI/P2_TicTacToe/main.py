@@ -1,6 +1,7 @@
-# Tic Tac Toe : Minimax Approach
-from os import system, name
+#!/usr/bin/env python
+"""TicTacToe Opponent with Minimax Algorithm"""
 
+__author__ = "Devansh Parapalli"
 
 BOARD = "---------"
 PLAYER = "X"
@@ -9,14 +10,13 @@ COMPUTER = "O"
 class InvalidMove(Exception):
     """ Raised when an invalid move is made """
 
-
 def print_board(board):
     print(f"    A   B   C  \n"
         f"1 | {board[0]} | {board[1]} | {board[2]} |\n"
         f"2 | {board[3]} | {board[4]} | {board[5]} |\n"
         f"3 | {board[6]} | {board[7]} | {board[8]} |\n")
 
-def process_inputs(inp_str):
+def notation_to_index(inp_str):
     if len(inp_str) != 2:
         raise ValueError("Enter 1 letter and 1 number")
     try:
@@ -36,6 +36,13 @@ def process_inputs(inp_str):
     
     # Convert to index
     return (number - 1) * 3 + ("ABC".index(letter)) 
+
+def index_to_notation(index):
+    # Convert to letter
+    letter = "ABC"[index % 3]
+    # Convert to number
+    number = index // 3 + 1
+    return f"{letter}{number}"
 
 def check_status(board):
     # Check rows
@@ -112,7 +119,7 @@ def make_computer_move(board):
             if move_val > best_val:
                 best_val = move_val
                 best_move = i
-    
+    print(f"[] Minimax: Best Move - {index_to_notation(best_move)}")
     return make_move(board, best_move, COMPUTER)
 
 if __name__ == "__main__":
@@ -123,7 +130,7 @@ if __name__ == "__main__":
         while True:
             print("[] Player's Turn")
             try:
-                index = process_inputs(input("Enter your move: "))
+                index = notation_to_index(input("Enter your move: "))
                 BOARD = make_move(BOARD, index, PLAYER)
                 break
             except InvalidMove as e:

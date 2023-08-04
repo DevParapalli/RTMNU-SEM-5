@@ -1,5 +1,9 @@
+#!/usr/bin/env python
+"""Water Jug Problem Solver using BFS"""
+
 from collections import deque
 
+__author__ = "Devansh Parapalli"
 
 def gcd(a, b):
     res = min(a, b)
@@ -8,7 +12,6 @@ def gcd(a, b):
             return res
         res -= 1
     raise ValueError("No GCD found")
-
 
 def is_solvable(a, b, target):
     if a + b < target:
@@ -108,10 +111,10 @@ def water_jug_bfs(a, b, target):
 if __name__ == "__main__":
     se, sf, p = water_jug_bfs(int(input("A:")), int(input("B:")), int(input("T:")))
     if se == sf == True: # Check to make sure that errors don't compromise answer
-        _pl = len(p)
-        for pe, idx in enumerate(p):
-            print(f"{idx[0]} {idx[1]}", end="")
-            if pe != _pl - 1:
+        pl = len(p)
+        for idx, pe  in enumerate(p):
+            print(f"{pe[0]} {pe[1]}", end="")
+            if idx != pl - 1:
                 print(" -> ", end="")
         print()
     else:

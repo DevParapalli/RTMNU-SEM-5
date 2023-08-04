@@ -9,7 +9,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.bin"
+                "${fileDirname}${pathSeparator}${fileBasenameNoExtension}.bin"
             ],
             "options": {
                 "cwd": "${fileDirname}"
