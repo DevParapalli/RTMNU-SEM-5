@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-"""Water Jug Problem Solver using BFS"""
-
 from collections import deque
 
 __author__ = "Devansh Parapalli"
@@ -27,11 +24,10 @@ def is_valid(a, b, current):
         return False
     return True
 
-def get_path_from_transitions(transitions: list[tuple[tuple[int, int], tuple[int, int]]], final_state: tuple[int, int]):
-    path: list[tuple[int, int]] = list()
+def get_path_from_transitions(transitions, final_state):
+    path = list()
     current_state = final_state
     transitions = list(set(transitions))
-    # This sort ensures that the minimal filled ones are at the front, giving a shorter reverse path (more closer to (0, 0) )
     transitions.sort(key=lambda x: x[0][0] + x[0][1])
     while current_state != (0, 0):
         for i in transitions:
@@ -48,28 +44,23 @@ def water_jug_bfs(a, b, target):
     if not solution_exists:
         raise ValueError("No solution exists")
     solution_found = False
-    mark: set[tuple[int, int]] = set()
-    queue: deque[tuple[int, int]] = deque()
-    transitions: list[tuple[tuple[int, int], tuple[int, int]]] = list()
-    path: list[tuple[int, int]] = list()
+    mark = set()
+    queue = deque()
+    transitions = list()
+    path = list()
     
     queue.append((0, 0))
     
     while len(queue) > 0:
         current = queue.popleft()
         if current in mark:
-            # Already visited state
             continue
         if not is_valid(a, b, current):
-            # Invalid State
             continue
         
-        # path.append(current)
-        
-        mark.add(current) # Mark the current state as visited.
+        mark.add(current) 
         
         if current[0] == target or current[1] == target:
-            # Solution found
             solution_found = True
             if current[0] == target:
                 path.append((current[0], 0))
@@ -79,27 +70,27 @@ def water_jug_bfs(a, b, target):
                 transitions.append((current, (0, current[1])))
             break
         
-        # Incase we didn't find solution
-        queue.append((a, current[1])) # R1: Fill the first jug 
+        # R1: Fill the first jug
+        queue.append((a, current[1])) 
         transitions.append((current, (a, current[1])))
-        queue.append((current[0], b)) # R2: Fill the second jug
+        # R2: Fill the second jug
+        queue.append((current[0], b)) 
         transitions.append((current, (current[0], b)))
-        
         # R3: Pour from A to B
         check_current = (current[0] - (b - current[1]), b) if current[0] > b - current[1] else (0, current[0] + current[1])
         if is_valid(a, b, check_current):
             queue.append(check_current)
             transitions.append((current, check_current))
-        
         # R4: Pour from B to A
         check_current = (a, current[1] - (a - current[0])) if current[1] > a - current[0] else (current[0] + current[1], 0)
         if is_valid(a, b, check_current):
             queue.append(check_current)
             transitions.append((current, check_current))
-        
-        queue.append((0, current[1])) # R5 : Empty first jug
+        # R5 : Empty first jug
+        queue.append((0, current[1])) 
         transitions.append((current, (0, current[1])))
-        queue.append((current[0], 0)) # R6 : Empty second jug
+        # R6 : Empty second jug
+        queue.append((current[0], 0)) 
         transitions.append((current, (current[0], 0)))
     
     _p = path.pop()

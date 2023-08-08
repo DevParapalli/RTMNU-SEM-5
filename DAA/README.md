@@ -1,7 +1,7 @@
 # Design and Analysis of Algorithms
 
 1. Implementation of [Binary Search](./BinarySearch/) using Divide & Conquer method.
-2. Implementation of [Merge Sort](./MergeSort/) and Quick Sort using Divide & Conquer method. Determine the time required to sort the elements.
+2. Implementation of [Merge Sort](./MergeSort/) and [Quick Sort](./QuickSort/) using Divide & Conquer method. Determine the time required to sort the elements.
 3. Implementation of knapsack problem using greedy strategy.
 4. WAP of minimum cost spanning tree using Kruskal's algorithm.
 5. WAP of minimum spanning tree using Prim's algorithm.

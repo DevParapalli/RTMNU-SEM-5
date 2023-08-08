@@ -7,6 +7,8 @@ BOARD = "---------"
 PLAYER = "X"
 COMPUTER = "O"
 
+_DRAW_MSG = "Game Drawn !"
+
 class InvalidMove(Exception):
     """ Raised when an invalid move is made """
 
@@ -29,7 +31,7 @@ def notation_to_index(inp_str):
         letter = inp_str[1].upper()
     
     # Bounds check
-    if letter not in ["A", "B", "C"]:
+    if letter not in "ABC":
         raise ValueError("Invalid Column")
     if number not in [1, 2, 3]:
         raise ValueError("Invalid Row")
@@ -68,12 +70,12 @@ def check_status(board):
     # If none of the above, return None, game will continue
     return None
 
-def make_move(board, index, player):
-    if board[index] == "-":
-        board = board[:index] + player + board[index+1:]
-        return board
+def make_move(index, player):
+    global BOARD
+    if BOARD[index] == "-":
+        BOARD = BOARD[:index] + player + BOARD[index+1:]
     else:
-        raise InvalidMove(f"Invalid move at index {index}")
+        raise InvalidMove(f"[] Invalid move at index {index}")
 
 def minimax(board, depth, is_max):
     
@@ -81,7 +83,7 @@ def minimax(board, depth, is_max):
     if check_status(board) == PLAYER:
         return depth - 10
     if check_status(board) == COMPUTER:
-        return 10 - depth
+        return 10 - depth 
     if check_status(board) == "D":
         return 0
 
@@ -106,56 +108,55 @@ def minimax(board, depth, is_max):
         return best_val
 
 
-def make_computer_move(board):
+def computer():
+    global BOARD
     # find best move
     best_val = -1000
     best_move = -1
     
     for i in range(9):
-        if board[i] == "-":
-            board = board[:i] + COMPUTER + board[i+1:]
-            move_val = minimax(board, 0, False)
-            board = board[:i] + "-" + board[i+1:]
+        if BOARD[i] == "-":
+            BOARD = BOARD[:i] + COMPUTER + BOARD[i+1:]
+            move_val = minimax(BOARD, 0, False)
+            BOARD = BOARD[:i] + "-" + BOARD[i+1:]
             if move_val > best_val:
                 best_val = move_val
                 best_move = i
+    
+    print("[] Minimax's Turn")
     print(f"[] Minimax: Best Move - {index_to_notation(best_move)}")
-    return make_move(board, best_move, COMPUTER)
+    make_move(best_move, COMPUTER)
+
+def player():
+    global BOARD
+    while True:
+        print("[] Player's Turn")
+        try:
+            index = notation_to_index(input("[x] Enter your move: "))
+            make_move(index, PLAYER)
+            break
+        except InvalidMove as e:
+            print(e)
+        except ValueError:
+            print("[] Invalid input! Try again")
+
+def check_and_terminate():
+    status = check_status(BOARD)
+    if status not in [None, "D"]:
+        print(f"[] {'Computer' if status == COMPUTER else 'Player'} won!")
+        return True
+    elif status == "D":
+        print(_DRAW_MSG)
+        return True
+    return False
 
 if __name__ == "__main__":
-    # Print initial board, so layout is clear
+    isPlayerFirst = input("[x] Player First ? (y/N): ").lower() == "y"
     print_board(BOARD)
     while True:
-        
-        while True:
-            print("[] Player's Turn")
-            try:
-                index = notation_to_index(input("Enter your move: "))
-                BOARD = make_move(BOARD, index, PLAYER)
-                break
-            except InvalidMove as e:
-                print(e)
-            except ValueError:
-                print("Invalid input! Try again")
-        
+        player() if isPlayerFirst else computer()
         print_board(BOARD)
-        status = check_status(BOARD)
-        if status not in [None, "D"]:
-            print(f"{status} won!")
-            break
-        elif status == "D":
-            print("Game Drawn!")
-            break
-        
-        print("[] Minimax's Turn")
-        # make computer move
-        BOARD = make_computer_move(BOARD)
-        
+        if check_and_terminate(): break
+        computer() if isPlayerFirst else player()
         print_board(BOARD)
-        status = check_status(BOARD)
-        if status not in [None, "D"]:
-            print(f"{status} won!")
-            break
-        elif status == "D":
-            print("Game Drawn!")
-            break
+        if check_and_terminate(): break

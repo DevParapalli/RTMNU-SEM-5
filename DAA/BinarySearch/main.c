@@ -5,7 +5,7 @@
 #define MAX_VAL 100
 #define RAND_SEED 773
 
-int compare_function(const void *a, const void *b) {
+int cmp(const void *a, const void *b) {
     return (*(int *)a - *(int *)b);
 }
 
@@ -17,7 +17,7 @@ int main() {
         arr[i] = rand() % MAX_VAL;
     }
 
-    qsort(arr, ARR_SIZE, sizeof(int), compare_function);
+    qsort(arr, ARR_SIZE, sizeof(int), cmp);
 
     printf("Sorted array:   ");
     for (int i = 0; i < ARR_SIZE; i++) {
