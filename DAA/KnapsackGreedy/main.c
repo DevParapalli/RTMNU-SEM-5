@@ -14,7 +14,7 @@ typedef struct Item {
 } item;
 
 int compare_item(const void *a, const void *b) {
-    return ((item *)b)->value / ((item *)b)->weight - ((item *)a)->value / ((item *)a)->weight;
+    return ((item *)a)->value / ((item *)a)->weight - ((item *)b)->value / ((item *)b)->weight;
 }
 
 int contains(int *arr, int size, int element) {
@@ -28,12 +28,15 @@ int contains(int *arr, int size, int element) {
 
 int knapsack(int capacity, item *items, int n) {
     if (n == 0 || capacity == 0) {
+        // If no more items are present, ignore
         return 0;
     }
 
     if (items[n - 1].weight > capacity) {
+        // Do not include next item.
         return knapsack(capacity, items, n - 1);
     } else {
+        // Include next item.
         return MAX(items[n - 1].value + knapsack(capacity - items[n - 1].weight, items, n - 1), knapsack(capacity, items, n - 1));
     }
 }
