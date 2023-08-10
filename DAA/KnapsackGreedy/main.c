@@ -14,7 +14,7 @@ typedef struct Item {
 } item;
 
 int compare_item(const void *a, const void *b) {
-    return ((item *)a)->value / ((item *)a)->weight - ((item *)b)->value / ((item *)b)->weight;
+    return ((item *)b)->value / ((item *)b)->weight - ((item *)a)->value / ((item *)a)->weight;
 }
 
 int contains(int *arr, int size, int element) {
@@ -56,7 +56,7 @@ int main(int argc, char **argv) {
     for (int i = 0; i < ARR_SIZE; i++) {
         printf("Item %.2d: value: %.2d, weight: %.2d\n", i, items[i].value, items[i].weight);
     }
-
-    printf("%d", knapsack(KNAPSACK_CAPACITY, items, n));
+    printf("Capacity: %d\n", KNAPSACK_CAPACITY);
+    printf("Maximum Value Possible using Greedy Strategy: %d\n", knapsack(KNAPSACK_CAPACITY, items, n));
     return 0;
 }
