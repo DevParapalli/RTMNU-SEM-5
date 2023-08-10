@@ -9,6 +9,7 @@
     - <https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-3-tic-tac-toe-ai-finding-optimal-move/>
 3. [ ] [Write a program to conduct informed search (Should be uninformed)](./P3_UninformedSearch/)
     - <https://iq.opengenus.org/maze-in-python/>
+    - <https://github.com/Areesha-Tahir/BFS-DFS-Maze-Solver-In-Python>
 4. [ ] [Write a program to conduct heuristic search](./P4_HeuristicSearch/)
 5. [ ] [Write a program to implement A* algorithm](./P5_AStarAlgorithm/)
 6. [ ] [Write a program to implement search problem of 3x3 puzzle](./P6_Search3x3Puzzle/)
