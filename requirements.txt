@@ -27,7 +27,7 @@ colorama==0.4.5
 commonmark==0.9.1
 constantly==15.1.0
 crashtest==0.3.1
-cryptography==37.0.4
+cryptography==41.0.3
 css-html-js-minify==2.5.5
 cssselect==1.2.0
 debugpy==1.6.0
