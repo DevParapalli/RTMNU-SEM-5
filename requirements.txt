@@ -198,7 +198,7 @@ webencodings==0.5.1
 websockets==10.4
 wrapt==1.14.1
 wsproto==1.1.0
-yt-dlp==2023.3.4
+yt-dlp==2023.7.6
 ytmusicapi==1.0.2
 zipp==3.13.0
 zope.interface==5.5.2
