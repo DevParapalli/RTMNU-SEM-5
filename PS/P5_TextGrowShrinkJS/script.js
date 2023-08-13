@@ -1,18 +1,30 @@
 let size = 5;
-let _interval;
+let interval;
+let is_growing = true;
 
 function interval() {
-    let text = document.getElementById("text");
-    text.style.fontSize = (size++) + "pt";
-    console.log(size);
-    if (size > 50) {
-        text.style.fontSize = "5pt";
+    if (is_growing) {
+        let text = document.getElementById("text");
+        text.style.fontSize = (size++) + "pt";
+        text.style.color = "red";
+        text.innerHTML = "TEXT-GROWING"
+        if (size > 50) {
+            is_growing = false;
+        }
+    } else {
+        let text = document.getElementById("text");
+        text.style.fontSize = (size--) + "pt";
         text.style.color = "blue";
         text.innerHTML = "TEXT-SHRINKING"
-        clearInterval(_interval);
+        if (size < 5) {
+            is_growing = true;
+        }
     }
 }
 
 
-_interval = setInterval(interval, 100);
+interval = setInterval(interval, 100);
+setTimeout(() => {
+    clearInterval(interval);
+}, 10000)
 
