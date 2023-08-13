@@ -4,10 +4,11 @@
 2. Implementation of [Merge Sort](./MergeSort/) and [Quick Sort](./QuickSort/) using Divide & Conquer method. Determine the time required to sort the elements.
 3. Implementation of [knapsack problem](./KnapsackGreedy/) using greedy strategy.
 4. WAP of minimum cost spanning tree using Kruskal's algorithm.
+   - Use Union-Find algorithm to detect cycle in graph.
 5. WAP of minimum spanning tree using Prim's algorithm.
 6. Implementation of Huffman Code using greedy strategy.
 7. WAP to find shortest path in graph using Dijsktra's algorithm.
-8. WAP to implement longest common subsequence (LCS) problem using dynamic programming
+8. WAP to implement longest common subsequence (LCS) problem using dynamic programming.
 9. WAP to find shortest path in graph using Bellman-Ford algorithm.
 10. WAP to find all pair shortest path using Floyd-Warshall algorithm.
 11. WAP to implement an application of BFS on undirected graph.
@@ -23,4 +24,4 @@
 
 ## Format
 
-Aim, Theory - written; Code in C/C++ and Output - Printed; Conclusion - Written
+Aim, Theory - written; Code in C/C++ and Output - Printed; Complexity Table (If exists), Conclusion - Written

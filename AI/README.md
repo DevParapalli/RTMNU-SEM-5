@@ -3,7 +3,7 @@
 ## List of Experiments
 
 1. [x] [Write a program to implement water jug problem](./P1_WaterJugProblem/)
-2. [ ] [Write a program to conduct heuristic search](./P2_HeuristicSearch/)
+2. [x] [Write a program to conduct heuristic search](./P2_HeuristicSearch/)
 3. [ ] [Write a program to implement A* algorithm](./P3_AStarAlgorithm/)
 4. [ ] [Write a program to implement search problem of 3x3 puzzle](./P4_Search3x3Puzzle/)
 5. [ ] [Write a program to construct Bayesian network from data.](./P5_BayesianNetwork/)

@@ -1,0 +1,18 @@
+{
+    "type": "HTML",
+    "version": "HTML5",
+    "files": [
+        {
+            "name":"index.html",
+            "type":"HTML"
+        },
+        {
+            "name":"styles.css",
+            "type":"CSS"
+        },
+        {
+            "name":"script.js",
+            "type":"JavaScript"
+        }
+    ]
+}

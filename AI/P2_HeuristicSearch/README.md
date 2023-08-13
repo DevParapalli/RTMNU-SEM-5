@@ -1,6 +1,6 @@
 # P2_Heuristic Search
 
-The problem implemented is the traveling salesman problem. The heuristic used is the nearest neighbor (NN) heuristic.
+The problem implemented is the traveling salesman problem. The heuristic used is the nearest neighbor (NN) heuristic. This is a form of Hill Climbing Algorithm.
 
 The nearest neighbour algorithm was one of the first algorithms used to solve the travelling salesman problem approximately. In that problem, the salesman starts at a random city and repeatedly visits the nearest city until all have been visited. The algorithm quickly yields a short tour, but usually not the optimal one.
 
