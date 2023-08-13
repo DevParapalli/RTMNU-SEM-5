@@ -4,11 +4,11 @@ The knapsack problem is the following problem in combinatorial optimization:
 
 > Given a set of items, each with a weight and a value, determine which items to include in the collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
 
-he most common problem being solved is the 0-1 knapsack problem, which restricts the number $ x_{i} $ of copies of each kind of item to zero or one. Given a set of $n$ items numbered from $1$ up to $n$, each with a weight $ w_{i} $ and a value $ v_{i} $, along with a maximum weight capacity $ W $,
+he most common problem being solved is the 0-1 knapsack problem, which restricts the number $ x_{i} $ of copies of each kind of item to zero or one. Given a set of $n$ items numbered from $1$ up to $n$, each with a weight $ w_{i} $ and a value $ v_{i} $, along with a maximum weight capacity $W$,
 
-maximize $ \sum _{i=1}^{n}v_{i}x_{i} $
+maximize $\sum _{i=1}^{n}v_{i}x_{i}$
 
-subject to $ \sum _{i=1}^{n}w_{i}x_{i}\leq W $ and $ x_{i}\in \{0,1\} $.
+subject to $\sum _{i=1}^{n}w_{i}x_{i}\leq W$ and $x_{i}\in \{0,1\}$.
 
 Informally, the problem is to maximize the sum of the values of the items in the knapsack so that the sum of the weights is less than or equal to the knapsack's capacity.
 

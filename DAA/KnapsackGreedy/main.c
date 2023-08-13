@@ -18,11 +18,7 @@ int compare_item(const void *a, const void *b) {
 }
 
 int contains(int *arr, int size, int element) {
-    for (int i = 0; i < size; i++) {
-        if (arr[i] == element) {
-            return 1;
-        }
-    }
+    for (int i = 0; i < size; i++) if (arr[i] == element) return 1;
     return 0;
 }
 
