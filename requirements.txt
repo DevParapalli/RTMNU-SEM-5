@@ -124,7 +124,7 @@ pycryptodome==3.17
 pycryptodomex==3.14.1
 pydantic==1.10.4
 PyDispatcher==2.0.7
-Pygments==2.11.2
+Pygments==2.15.0
 PyJWT==2.4.0
 pylev==1.4.0
 pylint==2.14.4
