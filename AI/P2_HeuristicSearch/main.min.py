@@ -3,7 +3,11 @@
 
 __author__ = "Devansh Parapalli"
 
-import math
+from math import sqrt as s, inf as i
+
+p = print
+r = round
+l = len
 
 C = {
     'A': (0, 0),
@@ -16,50 +20,49 @@ C = {
     'H': (5, 9),
 }
 
-def dist(city1, city2):
-    return math.sqrt((city1[0] - city2[0])**2 + (city1[1] - city2[1])**2)
+def d(c, c2):
+    return s((c[0] - c2[0])**2 + (c[1] - c2[1])**2)
 
-def dist_tbl(cities):
-    distance_table = {}
-    for city1 in cities:
-        distance_table[city1] = {}
-        for city2 in cities:
-            distance_table[city1][city2] = round(dist(cities[city1], cities[city2]), 2)
-    return distance_table
+def cdt(c):
+    dt = {}
+    for c1 in c:
+        dt[c1] = {}
+        for c2 in c:
+            dt[c1][c2] = r(d(c[c1], c[c2]), 2)
+    return dt
 
-def prt_dist_tbl(distance_table):
-    for c in distance_table:
-        print(f"\t  {c}", end='')
-    print()
-    for c in distance_table:
-        print(f"{c}", end='')
-        for c2 in distance_table[c]:
-            print(f"\t{distance_table[c][c2]:05.2f}", end='')
-        print()
-    print()
+def pdt(dt):
+    for c in dt:
+        p(f"\t  {c}", end='')
+    p()
+    for c in dt:
+        p(f"{c}", end='')
+        for c2 in dt[c]:
+            p(f"\t{dt[c][c2]:05.2f}", end='')
+        p()
+    p()
 
-def tsp(dist):
-    cur_c: str = 'A'
-    V: list[str] = ['A']
-    t_dist: float = 0.0
-    while len(V) < len(dist):
-        near_c: str = ''
-        near_dist: float = math.inf
-        for c in dist[cur_c]:
-            if c not in V:
-                if dist[cur_c][c] < near_dist:
-                    near_c = c
-                    near_dist = dist[cur_c][c]
-        V.append(near_c)
-        t_dist += near_dist
-        cur_c = near_c
-    t_dist += dist[V[-1]]['A']
-    V.append('A')
-    return round(t_dist, 2), V
+def t(d):
+    cc = 'A'
+    v = ['A']
+    td = 0.0
+    while l(v) < l(d):
+        nc = ''
+        nd = i
+        for c in d[cc]:
+            if c not in v and d[cc][c] < nd:
+                nc = c
+                nd = d[cc][c]
+        v.append(nc)
+        td += nd
+        cc = nc
+    td += d[v[-1]]['A']
+    v.append('A')
+    return r(td, 2), v
 
 if __name__ == "__main__":
-    _dist_tbl = dist_tbl(C)
-    prt_dist_tbl(_dist_tbl)
-    t_dist, path = tsp(_dist_tbl)
-    print(f"Total distance traveled: {t_dist} units")
-    print(f"Path: {' -> '.join(path)}")
+    dt = cdt(C)
+    pdt(dt)
+    td, _p = t(dt)
+    p(f"Total distance traveled: {td} units")
+    p(f"Path: {' -> '.join(_p)}")
