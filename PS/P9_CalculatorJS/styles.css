@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 13rem;
+}
+
+.display {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+#digit-display {
+    flex-grow: 1;
+}
+
+#operator-display {
+    max-width: 1rem;
+}
+
+.display > span {
+    font-family: monospace;
+    border: none;
+    font-size: 2rem;
+    user-select: none;
+}
+
+.display > span:empty::before {
+    content: "\200b";
+}
+
+.button-group {
+    padding: 0.5rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.25rem;
+}
+
+.button-group > button {
+    padding:0.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 2rem;
+    font-family: monospace;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group > button:hover {
+    background-color: #e6e6e6;
+}
+
+.button-group > button:active {
+    background-color: #cccccc;
+}
+
+.button-group > .plus {
+    grid-row: 2 / span 2;
+    grid-column: 4 / span 1;
+}
+
+.button-group > .equal {
+    grid-row: 4 / span 2;
+    grid-column: 4 / span 1;
+}
+.button-group > .zero {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 2;
+}

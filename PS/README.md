@@ -16,13 +16,13 @@
    - Text color
    - Implement all information in table layout
 5. [x] [Write a JavaScript code that displays text “TEXT-GROWING” with increasing font size in the interval of 100ms in RED COLOR, when the font size reaches 50pt it displays “TEXT-SHRINKING” in BLUE color. Then the font size decreases to 5pt.](./P5_TextGrowShrinkJS/)
-6. [ ] [Write a JavaScript that calculates the squares and cubes of the numbers from 0 to 10 and outputs HTML text that displays the resulting values in an HTML table format.](./P6_SquaresCubesTable/)
-7. [ ] [Develop and demonstrate a HTML5 file that includes JavaScript script that uses functions for the following problems.](./P7_JSFunc/)
+6. [x] [Write a JavaScript that calculates the squares and cubes of the numbers from 0 to 10 and outputs HTML text that displays the resulting values in an HTML table format.](./P6_SquaresCubesTable/)
+7. [x] [Develop and demonstrate a HTML5 file that includes JavaScript script that uses functions for the following problems.](./P7_JSFunc/)
    - Parameter: A string
    - Output: The position in the string of the left-most vowel
    - Parameter: A number
    - Output: The number with its digits in the reverse order
-8. [ ] [Create a webpage to implement search bar feature using Javascript using some basic search keywords.](./P8_SearchBarJS/)
+8. [x] [Create a webpage to implement search bar feature using Javascript using some basic search keywords.](./P8_SearchBarJS/)
    - Create Navigation bar first
    - Insert search bar on top right corner of navbar.
    - Place search button along with search bar.

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <title>P8_SearchBarJS</title>
+    <link rel="stylesheet"
+          href="style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <span>P8_SearchBarJS</span>
+        <div class="input-wrapper">
+            <input type="text"
+                   name="search-input"
+                   id="search-input"
+                   placeholder="Search..." />
+            <button type="button"
+                   name="search"
+                   id="search" >🔍</button>
+        </div>
+    </div>
+    <div class="body" data-search-active="false">
+        <h1 id="search-title">
+            You searched for : <span id="search-value">insert-item</span>
+        </h1>
+        <table id="product-table">
+            <thead>
+                <th>Product Name</th>
+                <th>Price</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <script src="products.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
