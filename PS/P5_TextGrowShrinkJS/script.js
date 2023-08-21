@@ -1,5 +1,5 @@
 let size = 5;
-let interval;
+let _interval;
 let is_growing = true;
 
 function interval() {
@@ -23,8 +23,8 @@ function interval() {
 }
 
 
-interval = setInterval(interval, 100);
+_interval = setInterval(interval, 100);
 setTimeout(() => {
-    clearInterval(interval);
+    clearInterval(_interval);
 }, 10000)
 
