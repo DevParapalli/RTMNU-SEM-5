@@ -24,7 +24,6 @@ body {
 }
 
 .body {
-    height: 100%;
     background-color: #eceff4;
     padding: 0.5rem 15vw;
     display: flex;
@@ -54,6 +53,6 @@ thead {
 }
 
 th, td {
-    padding: 0.5rem;
+    padding: 0.25rem;
     border: 1px solid #4c566a;
 }
