@@ -1,5 +1,3 @@
-from collections import deque
-
 class Graph:
     # example of adjacency list (or rather map)
     # adjacency_list = {
