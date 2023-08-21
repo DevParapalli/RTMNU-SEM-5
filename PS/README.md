@@ -26,7 +26,7 @@
    - Create Navigation bar first
    - Insert search bar on top right corner of navbar.
    - Place search button along with search bar.
-9. [ ] [Write a JavaScript to design a simple calculator to perform the following operations:](./P9_CalculatorJS/)
+9. [x] [Write a JavaScript to design a simple calculator to perform the following operations:](./P9_CalculatorJS/)
    - Sum
    - Product
    - Difference
