@@ -38,7 +38,7 @@
     - Invalid Password Prompt
     - Forgot Password Page
 
-Subject Teacher: Prof. RASIKA RODE
+Subject Teacher: Prof. Mukta K Wagh
 
 Head of Department : Dr. Latesh Bhagat
 

@@ -2,9 +2,9 @@
 
 The problem implemented is the traveling salesman problem. The heuristic used is the nearest neighbor (NN) heuristic. This is a form of Hill Climbing Algorithm.
 
-Heursitic Search is a technizque to find approximate solutions to complex optimization probelms (most of which are NP-hard). Heuristics are domain specific strategies or techniques that exploit the characteristics of the problem to guide the search problem, usually a heuristic gives a value and the search is directed in such a way that the value is maximized (knapsack problem - greedy approach) or minimized (traveling salesman problem - nearest neighbor approach).
+Heuristic Search is a technique to find approximate solutions to complex optimization problems (most of which are NP-hard). Heuristics are domain specific strategies or techniques that exploit the characteristics of the problem to guide the search problem, usually a heuristic gives a value and the search is directed in such a way that the value is maximized (knapsack problem - greedy approach) or minimized (traveling salesman problem - nearest neighbor approach).
 
-The nearest neighbour algorithm was one of the first algorithms used to solve the traveling salesman problem approximately. In that problem, the salesman starts at a random city and repeatedly visits the nearest city until all have been visited. The algorithm quickly yields a short tour, but usually not the optimal one.
+The nearest neighbor algorithm was one of the first algorithms used to solve the traveling salesman problem approximately. In that problem, the salesman starts at a random city and repeatedly visits the nearest city until all have been visited. The algorithm quickly yields a short tour, but usually not the optimal one.
 
 These are the steps of the algorithm:
 
