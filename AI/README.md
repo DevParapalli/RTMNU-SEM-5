@@ -4,8 +4,8 @@
 
 1. [x] [Write a program to implement water jug problem](./P1_WaterJugProblem/)
 2. [x] [Write a program to conduct heuristic search](./P2_HeuristicSearch/)
-3. [ ] [Write a program to implement A* algorithm](./P3_AStarAlgorithm/)
-4. [ ] [Write a program to implement search problem of 3x3 puzzle](./P4_Search3x3Puzzle/)
+3. [x] [Write a program to implement A* algorithm](./P3_AStarAlgorithm/)
+4. [x] [Write a program to implement search problem of 3x3 puzzle](./P4_Search3x3Puzzle/)
     - <https://visualstudiomagazine.com/articles/2015/10/30/sliding-tiles-c-sharp-ai.aspx>
     - <https://github.com/YahyaAlaaMassoud/Sliding-Puzzle-A-Star-Solver>
     - <https://replit.com/@Jaspirian/SimilarWoodenMemoryallocator#main.py>
