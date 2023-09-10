@@ -6,10 +6,18 @@ CSS works by selecting HTML elements and applying styles to them. It follows a c
 
 Basics of CSS:
 
-1. **Selectors** : CSS selectors are patterns used to target specific HTML elements. They specify which elements the following styles should apply to. There are various types of selectors, including element selectors, class selectors, ID selectors, attribute selectors, and more.
+1. **Selectors** : CSS selectors are patterns used to target specific HTML elements. They specify which elements the following styles should apply to.
     - Element selector: Targets HTML elements by their tag name (e.g., `p`, `h1`, `div`).
     - Class selector: Targets elements with a specific class attribute (e.g., `.my-class`).
     - ID selector: Targets a single element with a specific ID attribute (e.g., `#my-id`).
+    - Attribute selector: Targets elements with a specific attribute or attribute value (e.g., `[type="radio"]`).
+    - Pseudo-class selector: Targets elements based on a certain state (e.g., `:hover`, `:focus`, `:checked`).
+    - Pseudo-element selector: Targets a specific part of an element (e.g., `::before`, `::after`).
+    - Combinator selector: Combines multiple selectors together (e.g., `div p` selects all paragraphs inside div elements).
+    - Immediate child selector: Targets elements that are the immediate children of other elements (e.g., `div > p` selects all paragraphs that are immediate children of div elements).
+    - Adjacent sibling selector: Targets elements that are the next siblings of other elements (e.g., `div + p` selects all paragraphs that are the next siblings of div elements).
+    - General sibling selector: Targets elements that are siblings of other elements (e.g., `div ~ p` selects all paragraphs that are siblings of div elements).
+    - Universal selector: Targets all elements (e.g., `*`).
 2. **Properties** : CSS properties define the visual appearance of selected elements. Each property has a name and a value. For example, to set the color of a text to red, you would use the `color` property and set its value to `red`.
 3. **Declaration Block** : A set of CSS properties and their values enclosed within curly braces `{}` is known as a declaration block. It follows the selector in the CSS rule. For example:
 

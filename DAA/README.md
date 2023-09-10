@@ -3,7 +3,7 @@
 1. Implementation of [Binary Search](./BinarySearch/) using Divide & Conquer method.
 2. Implementation of [Merge Sort](./MergeSort/) and [Quick Sort](./QuickSort/) using Divide & Conquer method. Determine the time required to sort the elements.
 3. Implementation of [knapsack problem](./KnapsackGreedy/) using greedy strategy.
-4. WAP of minimum cost spanning tree using Kruskal's algorithm.
+4. WAP of minimum cost spanning tree using [Kruskal's algorithm](./KruskalUnionFind/).
    - Use Union-Find algorithm to detect cycle in graph.
 5. WAP of minimum spanning tree using Prim's algorithm.
 6. Implementation of Huffman Code using greedy strategy.
