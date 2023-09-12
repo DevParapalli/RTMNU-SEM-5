@@ -21,7 +21,7 @@ function modifyTableProducts(products) {
 
 
 document.addEventListener('DOMContentLoaded', () => { 
-    modifyTableProducts(PRODUCTS) 
+    modifyTableProducts(PRODUCTS);
 });
 
 document.getElementById('search').addEventListener('click', (event) => {
@@ -35,3 +35,4 @@ document.getElementById('search').addEventListener('click', (event) => {
     document.querySelector('#search-value').innerText = query;
     modifyTableProducts(search(query));
 });
+

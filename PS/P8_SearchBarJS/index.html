@@ -37,6 +37,12 @@
         </table>
         <script src="products.js"></script>
         <script src="script.js"></script>
+
+        <script type="module">
+            import formkitautoAnimate from 'https://cdn.jsdelivr.net/npm/@formkit/auto-animate@0.8.0/+esm'
+            const table = document.querySelector('#product-table>tbody');
+            formkitautoAnimate(table);
+        </script>
     </div>
 </body>
 
