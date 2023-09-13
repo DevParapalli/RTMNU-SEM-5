@@ -121,7 +121,7 @@ header > button:hover {
 }
 .sub-title {
     margin-top: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -145,7 +145,7 @@ header > button:hover {
 }
 
 .main>p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
@@ -185,7 +185,7 @@ h4.footer > svg {
 }
 
 .form > label {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
     margin-right: auto;
@@ -194,7 +194,7 @@ h4.footer > svg {
 .form > input {
     width: 100%;
     margin-bottom: 1rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.75rem;
     background-color: var(--section);
     outline: none;
     border: var(--nord10) 1px solid;
@@ -218,7 +218,7 @@ h4.footer > svg {
     width: 100%;
     background: var(--nord10);
     color: var(--nord6);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     border: none;
     outline: none;
@@ -236,7 +236,7 @@ h4.footer > svg {
 }
 
 .prompt {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-top: 0.5rem;
     margin-right: auto;
