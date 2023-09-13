@@ -9,7 +9,7 @@
 <body id="body">
     <header>
         <div class="logo">DevParapalli</div>
-        <button></button>
+        <button class="theme-change"></button>
     </header>
     <div class="content">
         <span class="page-text">
@@ -27,18 +27,81 @@
     <div class="form-wrapper">
         <h1>Login</h1>
         <div class="form">
-            <input type="text" placeholder="Username" id="username" required>
-            <input type="password" placeholder="Password" id="password" required>
-            <button type="submit">Login</button>
-        </div>
-        <div class="prompt">
-            <p>Don't have an account? <a href="#" id="signup">Sign up</a></p>
-            <p>Forgot password? <a href="#" id="forgot">Reset</a></p>
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+            <label for="username">Password</label>
+            <input type="password" id="password" required>
+            <hr />
+            <button data-action="login" type="submit">Login</button>
+
+            <div class="prompt">
+                <p>Don't have an account? <a data-render="signup-page" href="#" id="signup">Sign up</a></p>
+                <p>Forgot password? <a data-render="forgot-password" href="#" id="forgot">Reset</a></p>
+            </div>
         </div>
     </div>
 </template>
-<template id="signup-page">SIGNUP</template>
-<template id="login-success">USER</template>
-<template id="invalid-prompt">INVALID</template>
-<template id="forgot-password">FORGOT</template>
+<template id="signup-page"><div class="form-wrapper">
+    <h1>Sign Up</h1>
+    <div class="form">
+        <label for="email">Email</label>
+        <input type="text" id="email" required>
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" required>
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+        <label for="username">Password</label>
+        <input type="password" id="password" required>
+        <hr />
+        <button data-action="signup" type="submit">Sign Up</button>
+
+        <div class="prompt">
+            <p>Already have an account ? <a data-render="login-page" href="#" id="login">Login</a></p>
+            <p>Forgot password? <a data-render="forgot-password" href="#" id="forgot">Reset</a></p>
+        </div>
+    </div>
+</div>
+</template>
+<template id="login-success">
+    <div class="user-card-wrapper">
+        <div class="user-card">
+            <div class="image-wrapper">
+                <img src="https://avatars.githubusercontent.com/u/56132780?v=4" alt="User Image">
+            </div>
+            <div class="form">
+                <h1>Devansh Parapalli</h1> 
+                <p>User is successfully logged in</p>
+                <button data-action="logout">Logout</button>
+            </div>
+        </div>
+    </div>
+    
+</template>
+<template id="invalid-prompt">
+    <div class="form-wrapper">
+        <div class="form">
+            <p class="invalid">Invalid username or password</p>
+            <button data-render="login-page">Back To Login</button>
+            <div class="prompt">
+                <p>Forgot password? <a data-render="forgot-password" href="#" id="forgot">Reset</a></p>
+                <p>Don't have an account? <a data-render="signup-page" href="#" id="signup">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="forgot-password"><div class="form-wrapper">
+    <h1>Forgot Password</h1>
+    <div class="form">
+        <label for="email">Email</label>
+        <input type="text" id="email" required>
+        <hr />
+        <button data-action="forgot" type="submit">Send Magic Link</button>
+
+        <div class="prompt">
+            <p>Remember your password? <a data-render="login-page" href="#" id="login">Login</a></p>
+            <p>Don't have an account? <a data-render="signup-page" href="#" id="signup">Sign up</a></p>
+        </div>
+    </div>
+</div>
+</template>
 </html>
