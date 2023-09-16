@@ -5,8 +5,8 @@
 3. Implementation of [knapsack problem](./KnapsackGreedy/) using greedy strategy.
 4. WAP of minimum cost spanning tree using [Kruskal's algorithm](./KruskalUnionFind/).
    - Use Union-Find algorithm to detect cycle in graph.
-5. WAP of minimum spanning tree using Prim's algorithm.
-6. Implementation of Huffman Code using greedy strategy.
+5. WAP of minimum spanning tree using [Prim's algorithm](./PrimMST/).
+6. Implementation of [Huffman Code](./HuffmanCoding/) using greedy strategy.
 7. WAP to find shortest path in graph using Dijsktra's algorithm.
 8. WAP to implement longest common subsequence (LCS) problem using dynamic programming.
 9. WAP to find shortest path in graph using Bellman-Ford algorithm.
