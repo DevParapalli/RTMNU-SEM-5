@@ -5,3 +5,5 @@
 ## [Design and Analysis of Algorithms](./DAA)
 
 ## [Artificial Intelligence](./AI)
+
+## [Notes](./NOTES.md)
