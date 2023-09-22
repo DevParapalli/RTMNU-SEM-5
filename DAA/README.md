@@ -25,3 +25,8 @@
 ## Format
 
 Aim, Theory - written; Code in C/C++ and Output - Printed; Complexity Table (If exists), Conclusion - Written
+
+## Resources 
+
+- <https://github.com/LeoVen/C-Macro-Collections>
+- <https://github.com/ramdeoshubham/macros>

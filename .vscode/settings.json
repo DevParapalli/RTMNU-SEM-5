@@ -2,6 +2,7 @@
     "sonarlint.pathToCompileCommands": "${workspaceFolder}\\compile_commands.json",
     "cmake.configureOnOpen": false,
     "files.associations": {
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "rectypes.h": "c"
     }
 }
