@@ -19,6 +19,9 @@
     - <https://www.ics.uci.edu/~rickl/courses/cs-171/2012-wq-cs171/2012-wq-cs171-lecture-slides/2012wq171-17-BayesianNetworks.pdf>
     - <https://ocw.mit.edu/courses/hst-951j-medical-decision-support-spring-2003/96e36fa1484c29f1cb8f2322162bf3b7_lecture6.pdf>
     - <https://www.youtube.com/watch?v=TuGDMj43ehw>
+    - <https://www.kaggle.com/code/dhruvdeshmukh/constructing-the-bayesian-networks-in-python>
+    - <https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/>
+    - <https://towardsdatascience.com/introduction-to-bayesian-networks-81031eeed94e>
 6. [ ] [Write a program to infer from Bayesian network](./P6_InferBayesianNetwork/)
     - <https://www.cse.unsw.edu.au/~cs9417ml/Bayes/Pages/Bayesian_Networks_Inference.html>
     - <https://www.cs.cmu.edu/~guestrin/Class/10701/recitations/r9/var_elim_recitation_unanimated.pdf>
