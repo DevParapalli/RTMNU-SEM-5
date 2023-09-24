@@ -10,9 +10,9 @@
 7. WAP to find shortest path in graph using [Dijsktra's algorithm](./Dijsktra/).
 8. WAP to implement [longest common subsequence (LCS)](./LongestCommonSubsequence/) problem using dynamic programming.
 9. WAP to find shortest path in graph using [Bellman-Ford algorithm](./BellmanFord/).
-10. WAP to find all pair shortest path using Floyd-Warshall algorithm.
-11. WAP to implement an application of BFS on undirected graph.
-12. WAP to implement an application of DFS on an undirected graph.
+10. WAP to find all pair shortest path using [Floyd-Warshall](./FloydWarshall/) algorithm.
+11. WAP to implement an application of [BFS](./BFS/) on undirected graph.
+12. WAP to implement an application of [DFS](./DFS/) on an undirected graph.
 
 > `This list is according to Neha Nagrale Ma'am's document.`
 
