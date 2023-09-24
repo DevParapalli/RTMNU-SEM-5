@@ -10,5 +10,5 @@ To perform DFS, the algorithm follows the following steps:
 
 DFS can be implemented using either recursion or iteration. In the recursive implementation, a stack is implicitly maintained by the call stack, whereas in the iterative implementation, an explicit stack data structure is used to keep track of the nodes to visit.
 
-DFS is often used for solving problems that involve finding a path or a cycle in a graph, determining connectivity between nodes, and searching for a solution in a tree data structure. 
+DFS is often used for solving problems that involve finding a path or a cycle in a graph, determining connectivity between nodes, and searching for a solution in a tree data structure.
 It has a time complexity of O(V + E), where V is the number of vertices and E is the number of edges in the graph.
