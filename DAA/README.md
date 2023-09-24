@@ -7,9 +7,9 @@
    - Use Union-Find algorithm to detect cycle in graph.
 5. WAP of minimum spanning tree using [Prim's algorithm](./PrimMST/).
 6. Implementation of [Huffman Code](./HuffmanCoding/) using greedy strategy.
-7. WAP to find shortest path in graph using Dijsktra's algorithm.
-8. WAP to implement longest common subsequence (LCS) problem using dynamic programming.
-9. WAP to find shortest path in graph using Bellman-Ford algorithm.
+7. WAP to find shortest path in graph using [Dijsktra's algorithm](./Dijsktra/).
+8. WAP to implement [longest common subsequence (LCS)](./LongestCommonSubsequence/) problem using dynamic programming.
+9. WAP to find shortest path in graph using [Bellman-Ford algorithm](./BellmanFord/).
 10. WAP to find all pair shortest path using Floyd-Warshall algorithm.
 11. WAP to implement an application of BFS on undirected graph.
 12. WAP to implement an application of DFS on an undirected graph.
