@@ -1,3 +1,7 @@
+---
+permalink: /PS/P7_JSFunc/README.html
+---
+
 # P7_JSFunc
 
 1. **Event Handling:**

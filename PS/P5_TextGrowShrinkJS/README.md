@@ -1,3 +1,7 @@
+---
+permalink: /PS/P5_TextGrowShrinkJS/README.html
+---
+
 # P5_TextGrowShrinkJS
 
 **Styling in JavaScript:**

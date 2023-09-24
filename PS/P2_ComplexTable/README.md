@@ -1,3 +1,7 @@
+---
+permalink: /PS/P2_ComplexTable/README.html
+---
+
 # P2_ComplexTable
 
 The `<table>` HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.

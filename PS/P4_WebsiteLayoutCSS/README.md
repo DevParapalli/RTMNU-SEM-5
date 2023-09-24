@@ -1,3 +1,7 @@
+---
+permalink: /PS/P4_WebsiteLayoutCSS/README.html
+---
+
 # P4_WebsiteLayoutCSS
 
 - CSS, which stands for Cascading Style Sheets, is a fundamental web technology used to control the presentation and layout of HTML documents. It allows web developers to define how the content of a web page should be displayed, including aspects like colors, fonts, spacing, positioning, and more.

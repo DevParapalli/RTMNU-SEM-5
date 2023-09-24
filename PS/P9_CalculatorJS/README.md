@@ -1,3 +1,7 @@
+---
+permalink: /PS/P9_CalculatorJS/README.html
+---
+
 # P9_CalculatorJS
 
 Concepts used in this practical:

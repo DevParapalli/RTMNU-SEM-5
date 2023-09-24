@@ -1,3 +1,6 @@
+---
+permalink: /PS/P3_RegistrationForm/README.html
+---
 # P3_RegistrationForm
 
 - HTML forms are essential components used to collect user input and send it to a web server for processing. They provide a way for users to interact with a website by entering data, making selections, and submitting the information to perform various actions, like submitting a contact form, logging in, or making a purchase.

@@ -1,3 +1,7 @@
+---
+permalink: /PS/P1_CharPageFmtElem/README.html
+---
+
 # P1_CharPageFmtElem
 
 ## Aim : Develop an HTML Document for a web page using Character and Page formatting elements.

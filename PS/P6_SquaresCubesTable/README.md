@@ -1,3 +1,7 @@
+---
+permalink: /PS/P6_SquaresCubesTable/README.html
+---
+
 # P6_SquaresCubesTable
 
 The `<template>` tag is used as a container to hold some HTML content hidden from the user when the page loads.

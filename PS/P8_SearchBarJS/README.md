@@ -1,3 +1,7 @@
+---
+permalink: /PS/P8_SearchBarJS/README.html
+---
+
 # P8_SearchBarJS
 
 In JavaScript, when working with web pages, the Document Object Model (DOM) is a crucial concept. It represents the structured content of a webpage, and you can use JavaScript to interact with and manipulate the DOM to create dynamic and interactive web applications.
