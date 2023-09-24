@@ -29,7 +29,7 @@ AllowShortLambdasOnASingleLine: All
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
 AlwaysBreakAfterDefinitionReturnType: None
-AlwaysBreakAfterReturnType: AllDefinitions
+AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: Yes
 AttributeMacros:
@@ -89,7 +89,7 @@ ForEachMacros:
   - BOOST_FOREACH
 IfMacros:
   - KJ_IF_MAYBE
-IncludeBlocks: Preserve
+IncludeBlocks: Regroup
 IncludeCategories:
   - Regex: "^<(.*)>"
     Priority: 0
@@ -130,7 +130,7 @@ PenaltyBreakOpenParenthesis: 0
 PenaltyBreakString: 1000
 PenaltyBreakTemplateDeclaration: 10
 PenaltyExcessCharacter: 1000000
-PenaltyReturnTypeOnItsOwnLine: 60
+PenaltyReturnTypeOnItsOwnLine: 280
 PenaltyIndentedWhitespace: 0
 PointerAlignment: Left
 PPIndentWidth: -1
