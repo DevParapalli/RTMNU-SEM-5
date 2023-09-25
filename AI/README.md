@@ -49,3 +49,7 @@ Course Coordinator: Dr. Narendra Chaudhari
 Dept. Of Computer Science & Engg.
 
 Government College of Engineering, Nagpur.
+
+## Extra
+
+- <https://github.com/Not-A-Builder/AI-and-Soft-Computing>
