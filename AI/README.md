@@ -10,7 +10,7 @@
     - <https://github.com/YahyaAlaaMassoud/Sliding-Puzzle-A-Star-Solver>
     - <https://replit.com/@Jaspirian/SimilarWoodenMemoryallocator#main.py>
     - <https://stackoverflow.com/questions/49003059/n-puzzle-a-star-python-solver-efficiency>
-5. [ ] [Write a program to construct Bayesian network from data.](./P5_BayesianNetwork/)
+5. [x] [Write a program to construct Bayesian network from data.](./P5_BayesianNetwork/)
     - <https://en.wikipedia.org/wiki/Bayesian_network>
     - <https://towardsdatascience.com/how-to-train-a-bayesian-network-bn-using-expert-knowledge-583135d872d7>
     - <https://tangyuq.github.io/teachings/cis7414x/internal/80_BayesianAI.pdf>
