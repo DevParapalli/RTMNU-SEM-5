@@ -15,8 +15,7 @@ model.
    ii. Software Re-engineering
    iii. Forward Engineering
    iv. Restructuring
-8. Write short note on software quality and Explain different factors available
-to measure quality of software.
+8. Write short note on software quality and Explain different factors available to measure quality of software.
 9. What is SQA? How FTR is conducted for SQA? Explain activities involved in SQA
 10. Explain the concept of
     i. Project metric
