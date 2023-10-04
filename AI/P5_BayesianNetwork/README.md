@@ -46,3 +46,5 @@ The primary objective of this practical is to equip students with the knowledge 
 
 **Conclusion:**
 Constructing a Bayesian Network from data is a valuable skill in the field of Artificial Intelligence. It allows for efficient representation of probabilistic relationships and facilitates reasoning under uncertainty. This practical aims to provide students with hands-on experience in building these networks, enhancing their understanding of probabilistic graphical models.
+
+Dataset is available on <https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci>

@@ -1,16 +1,16 @@
 import numpy as np
 import pandas as pd
-from pgmpy.models import BayesianNetwork
-from pgmpy.estimators import MaximumLikelihoodEstimator
-from pgmpy.inference import VariableElimination
+from pgmpy.models import BayesianNetwork as BN
+from pgmpy.estimators import MaximumLikelihoodEstimator as MLE
+from pgmpy.inference import VariableElimination as VE
 
-heartDisease = pd.read_csv('./AI/P6_InferBayesianNetwork/heart.csv')
-heartDisease = heartDisease.replace('?',np.nan)
+hd = pd.read_csv('./AI/P6_InferBayesianNetwork/heart.csv')
+hd = hd.replace('?',np.nan)
 
 print('Few examples from the dataset are given below')
-print(heartDisease.head())
+print(hd.head())
 
-network=BayesianNetwork(
+nw=BN(
     [
         ('age','trestbps'),
         ('age','fbs'),
@@ -25,10 +25,10 @@ network=BayesianNetwork(
     )
 
 print('\n Learning CPD using Maximum likelihood estimators')
-network.fit(heartDisease,estimator=MaximumLikelihoodEstimator)
+nw.fit(hd,estimator=MLE)
 
 print('\n Inferencing with Bayesian Network:')
-HeartDisease_infer = VariableElimination(network)
+HeartDisease_infer = VE(nw)
 
 print('\n 1. Probability of HeartDisease given Age=45')
 q=HeartDisease_infer.query(variables=['heartdisease'], evidence={'age':45})
