@@ -26,10 +26,10 @@
     - <https://www.cse.unsw.edu.au/~cs9417ml/Bayes/Pages/Bayesian_Networks_Inference.html>
     - <https://www.cs.cmu.edu/~guestrin/Class/10701/recitations/r9/var_elim_recitation_unanimated.pdf>
     - <https://ocw.mit.edu/courses/6-825-techniques-in-artificial-intelligence-sma-5504-fall-2002/7119c2c7a9d00760da07077d9c59c55f_Lecture16FinalPart1.pdf>
-7. [ ] [Write a program to implement production system](./P7_ProductionSystem/)
+7. [x] [Write a program to implement production system](./P7_ProductionSystem/)
     - <https://intellipaat.com/blog/production-system-in-ai/>
     - <https://en.wikipedia.org/wiki/Production_system_(computer_science)>
-8. [ ] [Write a program to perform operations on fuzzy sets.](./P8_FuzzySets/)
+8. [x] [Write a program to perform operations on fuzzy sets.](./P8_FuzzySets/)
 9. [ ] [Implement a case study on constraint satisfaction problem](./P9_ConstraintSatisfaction/)
 10. [ ] [Write a program to implement perceptron model](./P10_PerceptronModel/)
 11. [ ] [Write a case study to show reinforcement learning](./P11_ReinforcementLearning/)
