@@ -1,5 +1,9 @@
 # Assignment 1
 
+[Editable Doc](./document.docx)
+[PDF](./document.pdf)
+[report](./report.pdf)
+
 Students have to create contents in own words on topics given below. There should not be copy and
 paste. Along with assignment , you have to submit plagiarism report. Assignment should be
 uploaded in word form. Assignment has to be submitted once . names and roll number of all
