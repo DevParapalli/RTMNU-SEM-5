@@ -22,7 +22,7 @@
     - <https://www.kaggle.com/code/dhruvdeshmukh/constructing-the-bayesian-networks-in-python>
     - <https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/>
     - <https://towardsdatascience.com/introduction-to-bayesian-networks-81031eeed94e>
-6. [ ] [Write a program to infer from Bayesian network](./P6_InferBayesianNetwork/)
+6. [x] [Write a program to infer from Bayesian network](./P6_InferBayesianNetwork/)
     - <https://www.cse.unsw.edu.au/~cs9417ml/Bayes/Pages/Bayesian_Networks_Inference.html>
     - <https://www.cs.cmu.edu/~guestrin/Class/10701/recitations/r9/var_elim_recitation_unanimated.pdf>
     - <https://ocw.mit.edu/courses/6-825-techniques-in-artificial-intelligence-sma-5504-fall-2002/7119c2c7a9d00760da07077d9c59c55f_Lecture16FinalPart1.pdf>
@@ -31,6 +31,7 @@
     - <https://en.wikipedia.org/wiki/Production_system_(computer_science)>
 8. [x] [Write a program to perform operations on fuzzy sets.](./P8_FuzzySets/)
 9. [ ] [Implement a case study on constraint satisfaction problem](./P9_ConstraintSatisfaction/)
+    - <https://www.ijcsmc.com/docs/papers/May2015/V4I5201520.pdf>
 10. [ ] [Write a program to implement perceptron model](./P10_PerceptronModel/)
 11. [ ] [Write a case study to show reinforcement learning](./P11_ReinforcementLearning/)
 
