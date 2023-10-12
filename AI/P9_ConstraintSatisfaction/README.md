@@ -13,7 +13,7 @@ Formally, a constraint satisfaction problem is defined as a triple $\langle X,D,
 - $C = \{C_1, \ldots, C_m\}$ is a set of constraints.
 
 Each variable $X_i$ can take on the values in the nonempty domain $D_i$.
-Every constraint $C_j \in C$ is in turn a pair $\langle t_j,R_j \rangle$, where $t_j \subseteq X$ is a subset of $k$ variables and $R_j$ is a $k$-ary [[relation (mathematics)|relation]] on the corresponding subset of domains $D_j$. An `evaluation` of the variables is a function from a subset of variables to a particular set of values in the corresponding subset of domains. An evaluation $v$ satisfies a constraint $\langle t_j, R_j \rangle$ if the values assigned to the variables $t_j$ satisfy the relation $R_j$.
+Every constraint $C_j \in C$ is in turn a pair $\langle t_j,R_j \rangle$, where $t_j \subseteq X$ is a subset of $k$ variables and $R_j$ is a $k$-ary relation on the corresponding subset of domains $D_j$. An `evaluation` of the variables is a function from a subset of variables to a particular set of values in the corresponding subset of domains. An evaluation $v$ satisfies a constraint $\langle t_j, R_j \rangle$ if the values assigned to the variables $t_j$ satisfy the relation $R_j$.
 
 An evaluation is `consistent` if it does not violate any of the constraints. An evaluation is `complete` if it includes all variables. An evaluation is a `solution` if it is consistent and complete; such an evaluation is said to `solve` the constraint satisfaction problem.
 
