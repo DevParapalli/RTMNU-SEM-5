@@ -15,6 +15,9 @@ diagrams.
 
 - <https://en.wikipedia.org/wiki/Means%E2%80%93ends_analysis>
 - <https://link.springer.com/content/pdf/10.1057/palgrave.jt.5750028.pdf>
+- - <https://www.britannica.com/science/means-ends-analysis>
+- <https://www.javatpoint.com/means-ends-analysis-in-ai>
+- <https://sites.psu.edu/psych256sp15/2015/04/19/problem-solving-using-means-end-analysis/>
 - <https://www.scribbr.com/plagiarism-checker/>
 
 ## Text Generated using LLM
