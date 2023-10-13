@@ -30,9 +30,9 @@
     - <https://intellipaat.com/blog/production-system-in-ai/>
     - <https://en.wikipedia.org/wiki/Production_system_(computer_science)>
 8. [x] [Write a program to perform operations on fuzzy sets.](./P8_FuzzySets/)
-9. [ ] [Implement a case study on constraint satisfaction problem](./P9_ConstraintSatisfaction/)
+9. [x] [Implement a case study on constraint satisfaction problem](./P9_ConstraintSatisfaction/)
     - <https://www.ijcsmc.com/docs/papers/May2015/V4I5201520.pdf>
-10. [ ] [Write a program to implement perceptron model](./P10_PerceptronModel/)
+10. [x] [Write a program to implement perceptron model](./P10_PerceptronModel/)
 11. [ ] [Write a case study to show reinforcement learning](./P11_ReinforcementLearning/)
 
 Removed Practicals (Old List):

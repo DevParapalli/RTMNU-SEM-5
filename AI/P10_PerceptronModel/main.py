@@ -12,14 +12,6 @@ def load_and_process_data() -> np.matrix:
 
 data = load_and_process_data()
 
-#   x-y     sepal length            petal length
-plt.scatter(np.array(data[:50, 0]), np.array(data[:50, 1]), marker='o', label='setosa')
-plt.scatter(np.array(data[50:, 0]), np.array(data[50:, 1]), marker='x', label='versicolor')
-plt.xlabel('sepal length')
-plt.ylabel('petal length')
-plt.legend()
-# plt.show()
-
 training_data = np.concatenate((data[:45, :], data[50:95, :]), axis=0)
 test_data = np.concatenate((data[45:50, :], data[95:100, :]), axis=0)
 benchmark = np.concatenate((data[49, :], data[99, :]), axis=0)
@@ -31,7 +23,7 @@ class Perceptron:
         self.bias = 0
         self.benchmark = benchmark
         self.output_index = output_index
-    
+        
     def activation(self, values) -> int:
         return 1 if sum([w * v for w, v in zip(self.weights, values)]) + self.bias > 0 else 0
     
@@ -67,3 +59,18 @@ print("[] Training Perceptron")
 perceptron.train(training_data)
 print("[] Test cases: ")
 perceptron.test(test_data)
+
+#   x-y     sepal length            petal length
+plt.scatter(np.array(data[:50, 0]), np.array(data[:50, 2]), marker='o', label='setosa')
+plt.scatter(np.array(data[50:, 0]), np.array(data[50:, 2]), marker='x', label='versicolor')
+plt.xlabel('sepal length')
+plt.ylabel('petal length')
+
+min_y = min(np.array(data[:, 2]))
+max_y = max(np.array(data[:, 2]))
+y_scale = ((max_y - min_y)/2)
+
+slope = (-(perceptron.bias)/(perceptron.weights[2])) / ((perceptron.bias)/(perceptron.weights[0]))
+plt.plot([4, 7], (y_scale * slope * np.array([4, 7])) + (-perceptron.bias / perceptron.weights[2]), label='Decision Boundary', color='red')
+plt.legend()
+plt.show()
