@@ -30,3 +30,9 @@ Aim, Theory - written; Code in C/C++ and Output - Printed; Complexity Table (If 
 
 - <https://github.com/LeoVen/C-Macro-Collections>
 - <https://github.com/ramdeoshubham/macros>
+  
+## Other Resources
+
+- [Assignment 01](./Assignment/1.md)
+- [Assignment 02](./Assignment/2.md)
+- [OLD README](./OLD_README.md)
