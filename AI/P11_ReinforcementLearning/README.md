@@ -5,6 +5,7 @@
 - <https://ojs.aaai.org/index.php/AAAI/article/view/18841>
 - <https://www.youtube.com/watch?v=Dw3BZ6O_8LY>
 - <https://en.wikipedia.org/wiki/Reinforcement_learning>
+- <https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html>
 
 ## GPT Output 1
 
