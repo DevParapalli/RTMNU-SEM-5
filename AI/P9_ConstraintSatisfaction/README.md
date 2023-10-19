@@ -19,48 +19,26 @@ An evaluation is `consistent` if it does not violate any of the constraints. An 
 
 The 8-Queen Problem is a classic example of a Constraint Satisfaction Problem (CSP) in the field of artificial intelligence and computer science. In this problem, the task is to place eight queens on an 8x8 chessboard in such a way that no two queens threaten each other. The queens must be placed in a manner that no two queens share the same row, column, or diagonal.
 
-Now, let's break down the components of this problem in the context of Constraint Satisfaction Problems:
+In this case, variables are the position of the queens on the chessboard. Each variable represents the row in which a queen is places. ie, The Domain for each variable is ${\{0, 1, 2, 3, 4, 5, 6, 7\}}$
 
-1. **Variables:**
-   - In this case, the variables are the positions of the queens on the chessboard. Each variable represents the row in which a queen is placed.
+Constraints define that no two queens can threaten each other. ie.
 
-2. **Domain:**
-   - The domain for each variable is the set of possible columns where a queen can be placed in the corresponding row. Since no two queens can share the same column, the domain for each variable is [1, 2, 3, 4, 5, 6, 7, 8].
+- all(queen.row) = distinct
+- all(queen.column) = distinct
+- No two queen can share same diagonal.
 
-3. **Constraints:**
-   - The constraints define the conditions that must be satisfied for a solution. In the 8-Queen Problem, the constraints ensure that no two queens threaten each other. These constraints can be expressed as:
-     - No two queens can share the same row.
-     - No two queens can share the same column.
-     - No two queens can be on the same diagonal.
+To solve the 8-Queen problem, we utilize Backtracking, Constant Propagation and Heuristics.
 
-4. **Objective Function:**
-   - In CSPs, there is often an objective function to optimize. In the case of the 8-Queen Problem, the objective is to find a valid arrangement of queens on the chessboard.
+In the context of the 8-Queen Problem, backtracking involves systematically tying out different assignments for the variables and backtracking when a conflict is encountered.
 
-5. **Search Space:**
-   - The search space represents all possible combinations of variable assignments. In this problem, it's the set of all possible arrangements of eight queens on the chessboard.
+Constraint Propagation involves using the constraints of the problem to reduce the search space. In the 8-Queen Problem, this can be implemented by considering the constraints at each step and eliminating options that violate those constraints.
 
-To solve the 8-Queen CSP, various algorithms like backtracking, constraint propagation, and heuristics can be applied. The goal is to find a consistent assignment of values to variables that satisfies all constraints. Solving the 8-Queen Problem illustrates the application of constraint satisfaction techniques in solving real-world problems with logical constraints.
+Heuristics are strategies used to guide the search process more efficiently.
 
-1. **Backtracking:**
-   - Backtracking is a fundamental technique for solving CSPs. In the context of the 8-Queen Problem, backtracking involves systematically trying out different assignments for the variables (queen positions) and backtracking when a conflict is encountered.
-   - The algorithm explores the search space tree, placing queens in different positions and backtracking when it realizes that the current assignment violates constraints.
+---
 
-2. **Constraint Propagation:**
-   - Constraint propagation involves using the constraints of the problem to reduce the search space. In the 8-Queen Problem, this can be implemented by considering the constraints at each step and eliminating options that violate those constraints.
-   - For instance, when placing a queen in a certain row, the algorithm can dynamically update the domains of other variables (rows) to exclude positions that share the same column or diagonal with the current queen.
+One common heuristic is to prioritize the placement of queens in rows with fewer available options, aiming to detect conflicts earlier in the search process.
 
-3. **Heuristics:**
-   - Heuristics are strategies used to guide the search process more efficiently. In the 8-Queen Problem, heuristics can be applied to choose the next variable to assign and the order in which values are tried.
-   - One common heuristic is to prioritize the placement of queens in rows with fewer available options, aiming to detect conflicts earlier in the search process.
+Various optimizations can be applied to improve the efficiency of the search. For example, symmetry-breaking techniques can be used to reduce redundant symmetrical solutions. Additionally, early detection of infeasible solution can prune parts of the search space, preventing the algorithm from exploring paths that lead to invalid configurations.
 
-4. **Optimizations:**
-   - Various optimizations can be applied to improve the efficiency of the search. For example, symmetry-breaking techniques can be used to reduce redundant symmetrical solutions.
-   - Additionally, early detection of infeasible solutions can prune parts of the search space, preventing the algorithm from exploring paths that lead to invalid configurations.
-
-5. **Parallelization:**
-   - Parallel computing can be leveraged to explore different branches of the search space concurrently, improving the overall efficiency of the solution process.
-
-6. **Learning:**
-   - In some cases, machine learning techniques can be employed to learn patterns from previous problem-solving experiences. This can guide the search process by anticipating promising regions of the search space.
-
-By combining these techniques, a comprehensive solver for the 8-Queen CSP can be developed. The choice of algorithm and heuristics depends on the specific characteristics of the problem and the desired trade-off between solution quality and computational efficiency. These methods showcase the versatility of constraint satisfaction techniques in addressing complex real-world problems.
+---
