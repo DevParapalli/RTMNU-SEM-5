@@ -5,6 +5,7 @@
 - <https://towardsdatascience.com/perceptron-and-its-implementation-in-python-f87d6c7aa428>
 - <https://www.kaggle.com/datasets/uciml/iris> -- We will only use the first 2 categories of this dataset, the last one is not linearly separable and cannot be classified using a single layer perceptron.
 - <https://www.codecademy.com/learn/perceptrons-and-neural-nets-skill-path/modules/perceptrons-skill-path/cheatsheet>
+- [main.noexternal.py](./main.noexternal.py)
 
 ```csv
 SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm,Species

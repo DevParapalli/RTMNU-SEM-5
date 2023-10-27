@@ -1,6 +1,8 @@
+import random
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+
 
 def load_and_process_data() -> np.matrix:
     import pathlib
@@ -24,7 +26,7 @@ class Perceptron:
     def activation(self, values) -> int:
         return 1 if sum([w * v for w, v in zip(self.weights, values)]) + self.bias > 0 else 0
     
-    def train(self, data, benchmark = None, epochs: int = 5):
+    def train(self, data, benchmark = None, epochs: int = 100):
         for i in range(epochs):
             for d in data:
                 values = d.tolist()[0]
