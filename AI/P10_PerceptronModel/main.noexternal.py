@@ -1,13 +1,16 @@
+from math import tanh
+
 class Perceptron:
-    def __init__(self, learning_rate = 0.1, num_inputs = 4):
-        self.learning_rate = 0.1
+    def __init__(self, learning_rate = 0.05, num_inputs = 4):
+        self.learning_rate = learning_rate
         self.weights = [0 for _ in range(num_inputs)]
         self.bias = 0
         
     def activation(self, input_vector):
-        return 1 if sum([w * v for w, v in zip(self.weights, input_vector)]) + self.bias > 0 else -1
+        # return 1 if sum([w * v for w, v in zip(self.weights, input_vector)]) + self.bias > 0 else -1
+        return tanh(sum([w * v for w, v in zip(self.weights, input_vector)]) + self.bias)
     
-    def train(self, data, epochs = 10):
+    def train(self, data, epochs = 1000):
         for _ in range(epochs):
             for dp in data:
                 prediction = self.activation(dp[:4])
@@ -18,7 +21,12 @@ class Perceptron:
                 
 
 def main():
-    with open("iris.csv", "r") as f:
+    
+    from pathlib import Path
+    script_dir = Path(__file__).parent.absolute()
+    
+    
+    with open(script_dir / "iris.csv", "r") as f:
         data = f.readlines()
         data = [d.replace("Iris-setosa", "-1").replace("Iris-versicolor", "1") for d in data]
         data = [d.strip().split(",") for d in data]
