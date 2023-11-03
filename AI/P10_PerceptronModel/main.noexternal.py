@@ -31,7 +31,7 @@ def main():
     
     perceptron.train(training_set)
     
-    print(f"Trained Weights: {perceptron.weights}")
+    print(f"Trained Weights: {perceptron.weights} | Bias: {perceptron.bias}")
     
     print("Test Set: ")
     for dp in test_set:
@@ -39,13 +39,27 @@ def main():
         print(f"Predicted: {prediction} | Actual: {dp[4]}")
     
     import matplotlib.pyplot as plt
-    plt.scatter([d[1] for d in data[:50]], [d[2] for d in data[:50]], color="red", label="Iris-setosa")
-    plt.scatter([d[1] for d in data[50:100]], [d[2] for d in data[50:100]], color="blue", label="Iris-versicolor")
+    
+    feat_a, feat_b = 1, 2
+    
+    feat_a = perceptron.weights.index(max(perceptron.weights))
+    feat_b = perceptron.weights.index(min(perceptron.weights))
+    
+    print(f"Using features {feat_a} and {feat_b}")
+    
+    plt.scatter([d[feat_b] for d in data[:50]], [d[feat_a] for d in data[:50]], color="red", label="Iris-setosa")
+    plt.scatter([d[feat_b] for d in data[50:100]], [d[feat_a] for d in data[50:100]], color="blue", label="Iris-versicolor")
+    
     plt.xlabel("Sepal Width")
     plt.ylabel("Petal Length")
     
+    min_x = min(x[feat_b] for x in data[:50] + data[50:100]) - 0.1
+    max_x = max(x[feat_b] for x in data[:50] + data[50:100]) + 0.1
+    
     slope = (-(perceptron.bias)/(perceptron.weights[2])) / ((perceptron.bias)/(perceptron.weights[1]))
-    plt.plot([2, 5], [slope * w + (-perceptron.bias / perceptron.weights[2]) for w in (2, 5)], label='Decision Boundary', color='black')
+    plt.plot([min_x, max_x], [slope * w + (-perceptron.bias / perceptron.weights[2]) for w in [min_x, max_x]], label='Decision Boundary', color='black')
+    plt.fill_between([min_x, max_x], [slope * w + (-perceptron.bias / perceptron.weights[2]) for w in [min_x, max_x]], 0, color="red", alpha=0.1)
+    plt.fill_between([min_x, max_x], [slope * w + (-perceptron.bias / perceptron.weights[2]) for w in [min_x, max_x]], 6, color="blue", alpha=0.1)
     plt.legend()
     plt.show()
     
