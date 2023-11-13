@@ -7,3 +7,7 @@
 ## [Artificial Intelligence](./AI)
 
 ## [Notes](./NOTES.md)
+
+## [PCE SESSIONAL](./EXAM/WRITTEN/PCE%20SESSIONAL.pdf)
+
+## [KDK SESSIONAL](./EXAM/WRITTEN/KDK%20SESSIONAL/README.md)
