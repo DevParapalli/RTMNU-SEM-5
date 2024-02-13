@@ -44,3 +44,8 @@ The dynamic programming algorithm involves the following steps:
 **Conclusion:**
 
 In this practical, we have implemented the Longest Common Subsequence (LCS) algorithm using dynamic programming. The LCS algorithm is widely used in various applications and is an essential problem in algorithm design. Understanding dynamic programming techniques like this one is crucial for solving a wide range of algorithmic problems efficiently.
+
+## Files
+
+- [main.c](./main.c)
+- [main.min.c](./main.min.c)

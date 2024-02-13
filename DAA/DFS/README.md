@@ -12,3 +12,7 @@ DFS can be implemented using either recursion or iteration. In the recursive imp
 
 DFS is often used for solving problems that involve finding a path or a cycle in a graph, determining connectivity between nodes, and searching for a solution in a tree data structure.
 It has a time complexity of O(V + E), where V is the number of vertices and E is the number of edges in the graph.
+
+## Files
+
+- [main.c](./main.c)

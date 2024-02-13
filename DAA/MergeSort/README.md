@@ -35,3 +35,7 @@ Using the Master theorem, we can solve the recurrence relation and find the time
 Thus, the time complexity of Merge Sort is O(n log n).
 
 **Note** : Merge Sort has an average, best, and worst-case time complexity of O(n log n). Additionally, it has a space complexity of O(n) due to the need for auxiliary space during the merge step to merge the sorted arrays.
+
+## Files
+
+- [main.c](./main.c)

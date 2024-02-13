@@ -51,3 +51,7 @@ Understanding and implementing operations on fuzzy sets are crucial steps toward
 10. Algebraic Difference
 11. Bounded Difference
 12. Cartesian Product
+
+## Files
+
+- [main.py](./main.py)

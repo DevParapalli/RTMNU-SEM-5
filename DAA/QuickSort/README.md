@@ -46,3 +46,6 @@ algorithm partition(A, lo, hi) is
 
 QuickSort has an average and best-case time complexity of O(n log n), where 'n' is the number of elements in the array. However, in the worst-case scenario (when the pivot is the smallest or largest element in the array), the time complexity can degrade to O(n^2). Nevertheless, the worst-case scenario is quite rare, and in practice, QuickSort outperforms many other sorting algorithms.
 
+## Files
+
+- [main.c](./main.c)

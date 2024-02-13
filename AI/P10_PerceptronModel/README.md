@@ -57,3 +57,9 @@ The Iris Dataset consists of 150 samples of iris flowers, each belonging to one 
 This practical introduces the foundational concept of a perceptron model and its application to a real-world dataset. By implementing the perceptron learning algorithm on the Iris Dataset, you gain insights into the fundamental principles of binary classification in the context of artificial intelligence.
 
 ---
+
+## Files
+
+- [main.noexternal.py](./main.noexternal.py) - without external libraries
+- [main.py](./main.py) - with numpy and pandas
+- [iris.csv](./iris.csv) - Place next to script

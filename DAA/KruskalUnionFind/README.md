@@ -26,3 +26,6 @@ The Union-Find data structure is used to efficiently manage the connectivity inf
 
 The Union-Find data structure is typically implemented using two main techniques: "union by rank" and "path compression." These techniques help ensure efficient operations and maintain a balanced tree structure within each set.
 
+## Files
+
+- [main.c](./main.c)

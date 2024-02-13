@@ -43,3 +43,7 @@ Application of Production Systems in AI:
 
 Conclusion:
 In conclusion, a production system provides a powerful paradigm for building intelligent systems capable of automated decision-making. Understanding its components and the execution cycle is crucial for the effective implementation of production systems in the context of artificial intelligence. This practical exercise aims to provide hands-on experience in developing a production system, enabling students to apply theoretical concepts to real-world problem-solving scenarios.
+
+## Files
+
+- [main.py](./main.py)

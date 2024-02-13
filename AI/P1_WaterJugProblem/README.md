@@ -21,3 +21,8 @@ and if possible, then find the sequence of steps to achieve this goal.
 ```
 
 To solve this problem, various algorithms and techniques can be employed, such as depth-first search (DFS), breadth-first search (BFS), or recursive approaches. The key is to keep track of the states of the two jugs during the process, avoid loops, and find a sequence that leads to the desired target amount. The accompanying program uses BFS with a Queue data structure.
+
+## Files
+
+- [main.min.py](./main.min.py) - Minified without external comments
+- [main.py](./main.py)

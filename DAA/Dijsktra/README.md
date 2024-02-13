@@ -43,3 +43,8 @@ Here is the pseudocode for Dijkstra's Algorithm:
 **Conclusion:**
 
 Dijkstra's Algorithm is a fundamental algorithm for finding the shortest path in a weighted graph. By implementing this algorithm, you can efficiently solve various real-world problems that involve finding optimal routes. Understanding its principles and complexities is essential for any student of algorithms and computer science.
+
+## Files
+
+- [main.c](./main.c)
+- [main.min.c](./main.min.c)

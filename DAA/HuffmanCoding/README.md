@@ -20,3 +20,7 @@ Huffman coding is a widely used technique in computer science and information th
 
 4. **Generate Huffman Codes**:
    - After assigning codes to all symbols, you have a mapping of each symbol to its corresponding Huffman code. This mapping can be used to compress and decompress data.
+
+## Files
+
+- [main.c](./main.c)

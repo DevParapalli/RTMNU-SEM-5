@@ -93,3 +93,9 @@ If we want to find P(C | evidence), where evidence is information about the valu
    - Various optimizations, such as caching intermediate results, can further improve the algorithm's performance.
 
 Variable Elimination is a foundational technique in Bayesian network inference and is widely used due to its ability to provide accurate results in a computationally efficient manner.
+
+## Files
+
+- [main.min.py](./main.min.py) - Minified without external comments
+- [main.py](./main.py)
+- [heart.csv](./heart.csv) - Place next to script

@@ -39,3 +39,8 @@ Complexity Analysis:
 
 Conclusion:
 The Bellman-Ford algorithm is a versatile algorithm for finding the shortest paths in a weighted graph. This practical exercise provides students with a hands-on experience in implementing and analyzing the algorithm's time complexity. Understanding and implementing such fundamental algorithms is essential for anyone studying the design and analysis of algorithms.
+
+## Files
+
+- [main.c](./main.c)
+- [main.min.c](./main.min.c)

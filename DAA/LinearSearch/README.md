@@ -5,3 +5,7 @@ Linear Search is a simple search algorithm that sequentially checks each element
 The time complexity of linear search is O(n), where n is the size of the array. This is because in the worst case, the algorithm must compare the target value with every element in the array before determining that the target value is not present. However, in the best case, the target value is found at the first index, resulting in a time complexity of O(1).
 
 Linear search is typically used for small arrays or for unsorted arrays where other algorithms like binary search cannot be used. It can also be used for searching linked lists, where it is more efficient than binary search.
+
+## Files
+
+- [main.c](./main.c)

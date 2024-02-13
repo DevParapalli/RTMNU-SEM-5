@@ -20,3 +20,8 @@ Complexity Analysis:
 We iterate once over each vertex of the graph, and for each vertex, we iterate over its neighbors (through the edges, pruning the items if we have already encountered it). Thus, the time complexity is O(V + E), where V is the number of vertices and E is the number of edges in the graph.
 
 The space complexity is O(V), where V is the number of vertices, due to the queue used to store the nodes to be explored.
+
+## Files
+
+- [main.c](./main.c)
+- [main.min.c](./main.min.c)

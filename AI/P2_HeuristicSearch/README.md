@@ -16,3 +16,8 @@ These are the steps of the algorithm:
 6. The sequence of the visited vertices is the output of the algorithm.
 
 The nearest neighbor algorithm is easy to implement and executes quickly, but it can sometimes miss shorter routes which are easily noticed with human insight, due to its "greedy" nature. As a general guide, if the last few stages of the tour are comparable in length to the first stages, then the tour is reasonable; if they are much greater, then it is likely that much better tours exist. Another check is to use an algorithm such as the lower bound algorithm to estimate if this tour is good enough.
+
+## Files
+
+- [main.min.py](./main.min.py) - Minified without external comments
+- [main.py](./main.py)

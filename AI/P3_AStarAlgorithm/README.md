@@ -31,3 +31,8 @@ Here's how the A* algorithm works:
 A* combines the advantages of Dijkstra's algorithm, which ensures that the shortest path is found, and Best-First Search, which is faster but might not find the optimal path. The use of the heuristic function guides the search towards the goal, improving efficiency.
 
 However, it's important to note that the efficiency of A* depends heavily on the quality of the heuristic function. An admissible heuristic is crucial for guaranteeing optimality, but a more informed heuristic can significantly speed up the search process.
+
+## Files
+
+- [main.min.py](./main.min.py) - Minified without external comments
+- [main.py](./main.py)
